@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=liquiddlx
+
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/dlx/dlx-vendor.mk)
 
