@@ -8,6 +8,9 @@ PRODUCT_RELEASE_NAME := dlx
 # Inherit some common liquid stuff.
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
+# overlays
+PRODUCT_PACKAGE_OVERLAYS += device/htc/dlx/overlay
+
 # Enhanced NFC
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
